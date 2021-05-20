@@ -1,45 +1,8 @@
-@extends('master')
 
-@section('main')
 
-<!-- <!DOCTYPE html>
-<html lang="zxx">
+    @extends('master')
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-    <link rel="stylesheet" href="assets/css/blog.css" />
-    <link rel="stylesheet" href="assets/css/blog_page.css">
-    <title>Donate Page</title>
-</head>
-
-<body>
-
-  ======= Mobile nav toggle button ======= -->
-    <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button> -->
-
-    <!-- ======= Header ======= -->
-    <!-- <header id="header" class="d-flex flex-column justify-content-center">
-
-        <nav class="nav-menu">
-            <ul>
-              <li class="active"><a href="index.html#hero"><i class="bx bx-home"></i> <span>Home</span></a></li> -->
-                <!-- <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li> --> -->
-                <!-- <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li> -->
-                <!-- <li><a href="#resume"><i class="bx bx-book-content"></i> <span>Our approach</span></a></li>
-                <li><a href="blog.html"><i class="bx bx-server"></i> <span>Blog</span></a></li>
-                <li><a href="#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-            </ul>
-        </nav>
-         -->
-        <!-- .nav-menu -->
-
-    <!-- </header> -->
-    <!-- End Header --> -->
+    @section('main')
 
     <main id="main">
         <div class="contianer-fluid p-3">
@@ -53,10 +16,7 @@
                 <div class="col-md-8">
                     <div class="content pt-5 pr-4 text-justify" data-aos="fade-left">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora doloremque aliquam omnis, corporis tenetur qui totam ipsa explicabo est provident eveniet dolorem optio ducimus. Quibusdam praesentium deserunt fugit aliquid suscipit.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta laboriosam praesentium possimus quos explicabo, necessitatibus reiciendis! Hic minus aspernatur quam mollitia dignissimos sed, corrupti rerum officia reprehenderit suscipit, nihil obcaecati.
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam mollitia ex consequuntur odit labore officiis rerum earum, esse, nemo officia animi laborum corporis enim, est adipisci veritatis blanditiis! Provident, quibusdam!
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim commodi cupiditate eveniet pariatur voluptates placeat impedit doloribus expedita ipsum ad temporibus, distinctio error dicta eligendi. Atque voluptatibus ad, consequatur, quae architecto nulla quam odio ipsum natus libero neque in, suscipit labore quaerat corporis hic qui vitae doloremque ipsa! Est, earum aperiam fugit officiis iste totam. Vitae vero quos voluptates maiores soluta ullam placeat! Sapiente iure asperiores obcaecati nulla adipisci doloribus consectetur rem quasi! Officia vero, cum ipsa placeat excepturi voluptatem odit. Architecto autem harum, odit praesentium voluptatibus accusamus, quos aspernatur iusto qui voluptas, sequi minima. Alias consequuntur modi dignissimos voluptatibus.
-                        </p>
+                        
                     </div>
                 </div>
                 <div class="col-md-4">

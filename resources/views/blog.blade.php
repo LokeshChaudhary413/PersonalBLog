@@ -15,37 +15,38 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati assumenda fuga mollitia accusamus rerum maxime doloremque omnis aliquid eos! Quam corrupti corporis nostrum culpa quaerat minima atque maiores ut alias.</p>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="donation-item">
-                            <div class="img">
-                                <img src="assets/img/motivation/motivation2.jpg" alt="Donation" />
-                                <a class="common-btn" href="{{url('post')}}">Read More</a>
-                            </div>
-                            <div class="inner">
-                                <div class="top">
-                                    <a class="tags" href="#">#Keyword for this post</a>
-                                    <h3>
-                                        <a href="{{url('post')}}">Post Title 1</a>
-                                    </h3>
-                                    <p>We exist for non-profits, social enterprises, activists. Lorem politicians and
-                                        individual citizens.</p>
+                    @foreach($blog as $list)
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="donation-item">
+                                <div class="img">
+                                    <img src="{{asset('storage/media/'.$list->image)}}" alt="Donation" />
+                                    <a class="common-btn" href="{{url('post/'.$list->slug)}}">Read More</a>
                                 </div>
-                                <div class="bottom">
-                                    <ul>
-                                        <li>Goal: 100.00</li>
-                                    </ul>
-                                    <div class="skill">
-                                        <div class="skill-bar skill1 wow fadeInLeftBig">
-                                            <span class="skill-count1">85%</span>
-                                        </div>
+                                <div class="inner">
+                                    <div class="top">
+                                        <a class="tags" href="#">{{$list->keyword}}</a>
+                                        <h3>
+                                            <a href="{{url('post/'.$list->slug)}}">{{$list->title}}</a>
+                                        </h3>
+                                        <p>{{$list->short_desc}}</p>
                                     </div>
+                                    <div class="bottom">
+                                        <ul>
+                                            <li>Goal: 100.00</li>
+                                        </ul>
+                                        <div class="skill">
+                                            <div class="skill-bar skill1 wow fadeInLeftBig">
+                                                <span class="skill-count1">85%</span>
+                                            </div>
+                                        </div>
 
-                                    <h4>Read by <span>85 people</span></h4>
+                                        <h4>Read by <span>85 people</span></h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
+                    @endforeach
+                    <!-- <div class="col-sm-6 col-lg-4">
                         <div class="donation-item">
                             <div class="img">
                                 <img src="assets/img/motivation/motivation3.jpg" alt="Donation" />
@@ -194,7 +195,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="row align-items-center">
                     <!-- <div class="col-lg-12">
